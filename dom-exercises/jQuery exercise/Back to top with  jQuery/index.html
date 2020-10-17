@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <style>
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 64px;
+            height: 64px;
+            z-index: 9999;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 64px;
+        }
+
+        .back-to-top:hover{
+        opacity: 0.7;
+        }
+    </style>
+
+    
+    <title>jQuery exercise | Back to top with jQuery</title>
+</head>
+<body>
+    <div>
+        I'll get my kit!
+All I want is to be a monkey of moderate intelligence who wears a suit… that's why I'm transferring to business school! I was having the most wonderful dream. Except you were there, and you were there, and you were there!
+
+Kids have names? Leela, Bender, we're going grave robbing. Ugh, it's filthy! Why not create a National Endowment for Strip Clubs while we're at it? File not found. Check it out, y'all. Everyone who was invited is here.
+
+Shut up and get to the point!
+Goodbye, friends. I never thought I'd die like this. But I always really hoped. The key to victory is discipline, and that means a well made bed. You will practice until you can make your bed in your sleep.
+
+I don't want to be rescued.
+But, like most politicians, he promised more than he could deliver.
+Fatal.
+I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+Daddy Bender, we're hungry. You are the last hope of the universe. Alright, let's mafia things up a bit. Joey, burn down the ship. Clamps, burn down the crew. Can I use the gun? What's with you kids? Every other day it's food, food, food. Alright, I'll get you some stupid food.
+
+That could be 'my' beautiful soul sitting naked on a couch. If I could just learn to play this stupid thing.
+Look, everyone wants to be like Germany, but do we really have the pure strength of 'will'?
+Really?!
+I'm just glad my fat, ugly mama isn't alive to see this day. Bender, this is Fry's decision… and he made it wrong. So it's time for us to interfere in his life. Large bet on myself in round one.
+
+I love you, buddy! Now what? Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans! Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.
+
+It's a T. It goes "tuh". I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness. I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+
+I videotape every customer that comes in here, so that I may blackmail them later. Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase. Kids don't turn rotten just from watching TV.
+
+Is today's hectic lifestyle making you tense and impatient? Oh, I always feared he might run off like this. Why, why, why didn't I break his legs? Hey, guess what you're accessories to. Hey, whatcha watching?
+
+I'm sure those windmills will keep them cool. Too much work. Let's burn it and say we dumped it in the sewer. What kind of a father would I be if I said no? Bender, we're trying our best. Oh yeah, good luck with that.
+
+For one beautiful night I knew what it was like to be a grandmother. Subjugated, yet honored. Goodbye, friends. I never thought I'd die like this. But I always really hoped. We'll need to have a look inside you with this camera.
+
+Your best is an idiot! You are the last hope of the universe. Guards! Bring me the forms I need to fill out to have her taken away! Is the Space Pope reptilian!?
+
+Good news, everyone! I've taught the toaster to feel love! Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain.
+
+Five hours? Aw, man! Couldn't you just get me the death penalty? A true inspiration for the children. Hey, tell me something. You've got all this money. How come you always dress like you're doing your laundry?
+
+Well I'da done better, but it's plum hard pleading a case while awaiting trial for that there incompetence. I love you, buddy! I could if you hadn't turned on the light and shut off my stereo. Is that a cooking show?
+
+I'll get my kit!
+All I want is to be a monkey of moderate intelligence who wears a suit… that's why I'm transferring to business school! I was having the most wonderful dream. Except you were there, and you were there, and you were there!
+
+Kids have names? Leela, Bender, we're going grave robbing. Ugh, it's filthy! Why not create a National Endowment for Strip Clubs while we're at it? File not found. Check it out, y'all. Everyone who was invited is here.
+
+Shut up and get to the point!
+Goodbye, friends. I never thought I'd die like this. But I always really hoped. The key to victory is discipline, and that means a well made bed. You will practice until you can make your bed in your sleep.
+
+I don't want to be rescued.
+But, like most politicians, he promised more than he could deliver.
+Fatal.
+I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+Daddy Bender, we're hungry. You are the last hope of the universe. Alright, let's mafia things up a bit. Joey, burn down the ship. Clamps, burn down the crew. Can I use the gun? What's with you kids? Every other day it's food, food, food. Alright, I'll get you some stupid food.
+
+That could be 'my' beautiful soul sitting naked on a couch. If I could just learn to play this stupid thing.
+Look, everyone wants to be like Germany, but do we really have the pure strength of 'will'?
+Really?!
+I'm just glad my fat, ugly mama isn't alive to see this day. Bender, this is Fry's decision… and he made it wrong. So it's time for us to interfere in his life. Large bet on myself in round one.
+
+I love you, buddy! Now what? Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans! Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.
+
+It's a T. It goes "tuh". I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness. I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+
+I videotape every customer that comes in here, so that I may blackmail them later. Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase. Kids don't turn rotten just from watching TV.
+
+Is today's hectic lifestyle making you tense and impatient? Oh, I always feared he might run off like this. Why, why, why didn't I break his legs? Hey, guess what you're accessories to. Hey, whatcha watching?
+
+I'm sure those windmills will keep them cool. Too much work. Let's burn it and say we dumped it in the sewer. What kind of a father would I be if I said no? Bender, we're trying our best. Oh yeah, good luck with that.
+
+For one beautiful night I knew what it was like to be a grandmother. Subjugated, yet honored. Goodbye, friends. I never thought I'd die like this. But I always really hoped. We'll need to have a look inside you with this camera.
+
+Your best is an idiot! You are the last hope of the universe. Guards! Bring me the forms I need to fill out to have her taken away! Is the Space Pope reptilian!?
+
+Good news, everyone! I've taught the toaster to feel love! Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain.
+
+Five hours? Aw, man! Couldn't you just get me the death penalty? A true inspiration for the children. Hey, tell me something. You've got all this money. How come you always dress like you're doing your laundry?
+
+Well I'da done better, but it's plum hard pleading a case while awaiting trial for that there incompetence. I love you, buddy! I could if you hadn't turned on the light and shut off my stereo. Is that a cooking show?
+
+I'll get my kit!
+All I want is to be a monkey of moderate intelligence who wears a suit… that's why I'm transferring to business school! I was having the most wonderful dream. Except you were there, and you were there, and you were there!
+
+Kids have names? Leela, Bender, we're going grave robbing. Ugh, it's filthy! Why not create a National Endowment for Strip Clubs while we're at it? File not found. Check it out, y'all. Everyone who was invited is here.
+
+Shut up and get to the point!
+Goodbye, friends. I never thought I'd die like this. But I always really hoped. The key to victory is discipline, and that means a well made bed. You will practice until you can make your bed in your sleep.
+
+I don't want to be rescued.
+But, like most politicians, he promised more than he could deliver.
+Fatal.
+I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+Daddy Bender, we're hungry. You are the last hope of the universe. Alright, let's mafia things up a bit. Joey, burn down the ship. Clamps, burn down the crew. Can I use the gun? What's with you kids? Every other day it's food, food, food. Alright, I'll get you some stupid food.
+
+That could be 'my' beautiful soul sitting naked on a couch. If I could just learn to play this stupid thing.
+Look, everyone wants to be like Germany, but do we really have the pure strength of 'will'?
+Really?!
+I'm just glad my fat, ugly mama isn't alive to see this day. Bender, this is Fry's decision… and he made it wrong. So it's time for us to interfere in his life. Large bet on myself in round one.
+
+I love you, buddy! Now what? Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans! Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.
+
+It's a T. It goes "tuh". I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness. I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+
+I videotape every customer that comes in here, so that I may blackmail them later. Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase. Kids don't turn rotten just from watching TV.
+
+Is today's hectic lifestyle making you tense and impatient? Oh, I always feared he might run off like this. Why, why, why didn't I break his legs? Hey, guess what you're accessories to. Hey, whatcha watching?
+
+I'm sure those windmills will keep them cool. Too much work. Let's burn it and say we dumped it in the sewer. What kind of a father would I be if I said no? Bender, we're trying our best. Oh yeah, good luck with that.
+
+For one beautiful night I knew what it was like to be a grandmother. Subjugated, yet honored. Goodbye, friends. I never thought I'd die like this. But I always really hoped. We'll need to have a look inside you with this camera.
+
+Your best is an idiot! You are the last hope of the universe. Guards! Bring me the forms I need to fill out to have her taken away! Is the Space Pope reptilian!?
+
+Good news, everyone! I've taught the toaster to feel love! Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain.
+
+Five hours? Aw, man! Couldn't you just get me the death penalty? A true inspiration for the children. Hey, tell me something. You've got all this money. How come you always dress like you're doing your laundry?
+
+Well I'da done better, but it's plum hard pleading a case while awaiting trial for that there incompetence. I love you, buddy! I could if you hadn't turned on the light and shut off my stereo. Is that a cooking show?
+
+I'll get my kit!
+All I want is to be a monkey of moderate intelligence who wears a suit… that's why I'm transferring to business school! I was having the most wonderful dream. Except you were there, and you were there, and you were there!
+
+Kids have names? Leela, Bender, we're going grave robbing. Ugh, it's filthy! Why not create a National Endowment for Strip Clubs while we're at it? File not found. Check it out, y'all. Everyone who was invited is here.
+
+Shut up and get to the point!
+Goodbye, friends. I never thought I'd die like this. But I always really hoped. The key to victory is discipline, and that means a well made bed. You will practice until you can make your bed in your sleep.
+
+I don't want to be rescued.
+But, like most politicians, he promised more than he could deliver.
+Fatal.
+I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+Daddy Bender, we're hungry. You are the last hope of the universe. Alright, let's mafia things up a bit. Joey, burn down the ship. Clamps, burn down the crew. Can I use the gun? What's with you kids? Every other day it's food, food, food. Alright, I'll get you some stupid food.
+
+That could be 'my' beautiful soul sitting naked on a couch. If I could just learn to play this stupid thing.
+Look, everyone wants to be like Germany, but do we really have the pure strength of 'will'?
+Really?!
+I'm just glad my fat, ugly mama isn't alive to see this day. Bender, this is Fry's decision… and he made it wrong. So it's time for us to interfere in his life. Large bet on myself in round one.
+
+I love you, buddy! Now what? Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans! Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.
+
+It's a T. It goes "tuh". I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness. I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+
+I videotape every customer that comes in here, so that I may blackmail them later. Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase. Kids don't turn rotten just from watching TV.
+
+Is today's hectic lifestyle making you tense and impatient? Oh, I always feared he might run off like this. Why, why, why didn't I break his legs? Hey, guess what you're accessories to. Hey, whatcha watching?
+
+I'm sure those windmills will keep them cool. Too much work. Let's burn it and say we dumped it in the sewer. What kind of a father would I be if I said no? Bender, we're trying our best. Oh yeah, good luck with that.
+
+For one beautiful night I knew what it was like to be a grandmother. Subjugated, yet honored. Goodbye, friends. I never thought I'd die like this. But I always really hoped. We'll need to have a look inside you with this camera.
+
+Your best is an idiot! You are the last hope of the universe. Guards! Bring me the forms I need to fill out to have her taken away! Is the Space Pope reptilian!?
+
+Good news, everyone! I've taught the toaster to feel love! Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain.
+
+Five hours? Aw, man! Couldn't you just get me the death penalty? A true inspiration for the children. Hey, tell me something. You've got all this money. How come you always dress like you're doing your laundry?
+
+Well I'da done better, but it's plum hard pleading a case while awaiting trial for that there incompetence. I love you, buddy! I could if you hadn't turned on the light and shut off my stereo. Is that a cooking show?
+
+I'll get my kit!
+All I want is to be a monkey of moderate intelligence who wears a suit… that's why I'm transferring to business school! I was having the most wonderful dream. Except you were there, and you were there, and you were there!
+
+Kids have names? Leela, Bender, we're going grave robbing. Ugh, it's filthy! Why not create a National Endowment for Strip Clubs while we're at it? File not found. Check it out, y'all. Everyone who was invited is here.
+
+Shut up and get to the point!
+Goodbye, friends. I never thought I'd die like this. But I always really hoped. The key to victory is discipline, and that means a well made bed. You will practice until you can make your bed in your sleep.
+
+I don't want to be rescued.
+But, like most politicians, he promised more than he could deliver.
+Fatal.
+I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+Daddy Bender, we're hungry. You are the last hope of the universe. Alright, let's mafia things up a bit. Joey, burn down the ship. Clamps, burn down the crew. Can I use the gun? What's with you kids? Every other day it's food, food, food. Alright, I'll get you some stupid food.
+
+That could be 'my' beautiful soul sitting naked on a couch. If I could just learn to play this stupid thing.
+Look, everyone wants to be like Germany, but do we really have the pure strength of 'will'?
+Really?!
+I'm just glad my fat, ugly mama isn't alive to see this day. Bender, this is Fry's decision… and he made it wrong. So it's time for us to interfere in his life. Large bet on myself in round one.
+
+I love you, buddy! Now what? Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans! Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.
+
+It's a T. It goes "tuh". I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness. I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+
+I videotape every customer that comes in here, so that I may blackmail them later. Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase. Kids don't turn rotten just from watching TV.
+
+Is today's hectic lifestyle making you tense and impatient? Oh, I always feared he might run off like this. Why, why, why didn't I break his legs? Hey, guess what you're accessories to. Hey, whatcha watching?
+
+I'm sure those windmills will keep them cool. Too much work. Let's burn it and say we dumped it in the sewer. What kind of a father would I be if I said no? Bender, we're trying our best. Oh yeah, good luck with that.
+
+For one beautiful night I knew what it was like to be a grandmother. Subjugated, yet honored. Goodbye, friends. I never thought I'd die like this. But I always really hoped. We'll need to have a look inside you with this camera.
+
+Your best is an idiot! You are the last hope of the universe. Guards! Bring me the forms I need to fill out to have her taken away! Is the Space Pope reptilian!?
+
+Good news, everyone! I've taught the toaster to feel love! Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain.
+
+Five hours? Aw, man! Couldn't you just get me the death penalty? A true inspiration for the children. Hey, tell me something. You've got all this money. How come you always dress like you're doing your laundry?
+
+Well I'da done better, but it's plum hard pleading a case while awaiting trial for that there incompetence. I love you, buddy! I could if you hadn't turned on the light and shut off my stereo. Is that a cooking show?
+
+I'll get my kit!
+All I want is to be a monkey of moderate intelligence who wears a suit… that's why I'm transferring to business school! I was having the most wonderful dream. Except you were there, and you were there, and you were there!
+
+Kids have names? Leela, Bender, we're going grave robbing. Ugh, it's filthy! Why not create a National Endowment for Strip Clubs while we're at it? File not found. Check it out, y'all. Everyone who was invited is here.
+
+Shut up and get to the point!
+Goodbye, friends. I never thought I'd die like this. But I always really hoped. The key to victory is discipline, and that means a well made bed. You will practice until you can make your bed in your sleep.
+
+I don't want to be rescued.
+But, like most politicians, he promised more than he could deliver.
+Fatal.
+I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+Daddy Bender, we're hungry. You are the last hope of the universe. Alright, let's mafia things up a bit. Joey, burn down the ship. Clamps, burn down the crew. Can I use the gun? What's with you kids? Every other day it's food, food, food. Alright, I'll get you some stupid food.
+
+That could be 'my' beautiful soul sitting naked on a couch. If I could just learn to play this stupid thing.
+Look, everyone wants to be like Germany, but do we really have the pure strength of 'will'?
+Really?!
+I'm just glad my fat, ugly mama isn't alive to see this day. Bender, this is Fry's decision… and he made it wrong. So it's time for us to interfere in his life. Large bet on myself in round one.
+
+I love you, buddy! Now what? Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans! Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.
+
+It's a T. It goes "tuh". I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness. I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+
+I videotape every customer that comes in here, so that I may blackmail them later. Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase. Kids don't turn rotten just from watching TV.
+
+Is today's hectic lifestyle making you tense and impatient? Oh, I always feared he might run off like this. Why, why, why didn't I break his legs? Hey, guess what you're accessories to. Hey, whatcha watching?
+
+I'm sure those windmills will keep them cool. Too much work. Let's burn it and say we dumped it in the sewer. What kind of a father would I be if I said no? Bender, we're trying our best. Oh yeah, good luck with that.
+
+For one beautiful night I knew what it was like to be a grandmother. Subjugated, yet honored. Goodbye, friends. I never thought I'd die like this. But I always really hoped. We'll need to have a look inside you with this camera.
+
+Your best is an idiot! You are the last hope of the universe. Guards! Bring me the forms I need to fill out to have her taken away! Is the Space Pope reptilian!?
+
+Good news, everyone! I've taught the toaster to feel love! Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain.
+
+Five hours? Aw, man! Couldn't you just get me the death penalty? A true inspiration for the children. Hey, tell me something. You've got all this money. How come you always dress like you're doing your laundry?
+
+Well I'da done better, but it's plum hard pleading a case while awaiting trial for that there incompetence. I love you, buddy! I could if you hadn't turned on the light and shut off my stereo. Is that a cooking show?
+
+I'll get my kit!
+All I want is to be a monkey of moderate intelligence who wears a suit… that's why I'm transferring to business school! I was having the most wonderful dream. Except you were there, and you were there, and you were there!
+
+Kids have names? Leela, Bender, we're going grave robbing. Ugh, it's filthy! Why not create a National Endowment for Strip Clubs while we're at it? File not found. Check it out, y'all. Everyone who was invited is here.
+
+Shut up and get to the point!
+Goodbye, friends. I never thought I'd die like this. But I always really hoped. The key to victory is discipline, and that means a well made bed. You will practice until you can make your bed in your sleep.
+
+I don't want to be rescued.
+But, like most politicians, he promised more than he could deliver.
+Fatal.
+I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+Daddy Bender, we're hungry. You are the last hope of the universe. Alright, let's mafia things up a bit. Joey, burn down the ship. Clamps, burn down the crew. Can I use the gun? What's with you kids? Every other day it's food, food, food. Alright, I'll get you some stupid food.
+
+That could be 'my' beautiful soul sitting naked on a couch. If I could just learn to play this stupid thing.
+Look, everyone wants to be like Germany, but do we really have the pure strength of 'will'?
+Really?!
+I'm just glad my fat, ugly mama isn't alive to see this day. Bender, this is Fry's decision… and he made it wrong. So it's time for us to interfere in his life. Large bet on myself in round one.
+
+I love you, buddy! Now what? Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans! Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.
+
+It's a T. It goes "tuh". I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness. I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
+
+I videotape every customer that comes in here, so that I may blackmail them later. Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase. Kids don't turn rotten just from watching TV.
+
+Is today's hectic lifestyle making you tense and impatient? Oh, I always feared he might run off like this. Why, why, why didn't I break his legs? Hey, guess what you're accessories to. Hey, whatcha watching?
+
+I'm sure those windmills will keep them cool. Too much work. Let's burn it and say we dumped it in the sewer. What kind of a father would I be if I said no? Bender, we're trying our best. Oh yeah, good luck with that.
+
+For one beautiful night I knew what it was like to be a grandmother. Subjugated, yet honored. Goodbye, friends. I never thought I'd die like this. But I always really hoped. We'll need to have a look inside you with this camera.
+
+Your best is an idiot! You are the last hope of the universe. Guards! Bring me the forms I need to fill out to have her taken away! Is the Space Pope reptilian!?
+
+Good news, everyone! I've taught the toaster to feel love! Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain.
+
+Five hours? Aw, man! Couldn't you just get me the death penalty? A true inspiration for the children. Hey, tell me something. You've got all this money. How come you always dress like you're doing your laundry?
+
+Well I'da done better, but it's plum hard pleading a case while awaiting trial for that there incompetence. I love you, buddy! I could if you hadn't turned on the light and shut off my stereo. Is that a cooking show?
+
+
+    </div>
+    <a href="#" class="back-to-top">UP</a>
+
+    <script>
+        $(document).ready(function(){
+ 
+         //Check to see if the window is top if not then display button
+        $(window).scroll(function(){
+
+        // Show button after 100px
+            var showAfter = 100;
+
+            if ( $(this).scrollTop() > showAfter ) { 
+              $('.back-to-top').fadeIn();
+
+            } else { 
+
+             $('.back-to-top').fadeOut();
+
+            }
+
+        });
+        
+        //Click event to scroll to top
+        $('.back-to-top').click(function(){
+
+            $('html, body').animate({scrollTop : 0},800);
+
+             return false;
+            
+            });
+        
+        });
+    </script>
+</body>
+</html>

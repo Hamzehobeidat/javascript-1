@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #3 (4): Changing images</title>
+</head>
+<body>
+    <select id="mySelect" onchange="changeImage()">
+        <option value="no-image">Select</option>
+        <option value="jor.jpg" >Jordan</option>
+        <option value="tur.jpg" >Turkish</option>
+      </select>
+
+      <div >
+         <img id="image" src="" alt="">
+      </div>
+      <script>
+          /*
+         function per1() {
+            var x = document.getElementById("image").innerHTML="<img src='images/IMG-20201007-WA0006.jpg'>"
+            return x;
+          }
+          */
+          /*
+          function per1() {
+           
+           // var x = document.getElementById("mySelect").value;
+           // document.getElementById("image").innerHTML = "<img src=''>" + x;
+             
+            var img = document.createElement('img');
+            img.src = 'images/IMG-20201007-WA0006.jpg';
+            document.getElementById('image').appendChild(img);
+            
+            }
+            */
+
+            function changeImage() {
+            var s = document.getElementById("mySelect");
+            var img = document.getElementById("image");
+            img.src = "images/" + s.options[s.selectedIndex].value;
+            
+        }
+
+
+      </script>
+    
+</body>
+</html>

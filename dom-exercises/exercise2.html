@@ -8,13 +8,48 @@
             width: 200px;
             height: 200px;
             border: 1px solid black;
+            background-color: blue;
         }
     </style>
     <script>
         /* TODO: write JS code here */
+
+        
+        
+          // d.style.backgroundColor ="bule";
+
+          function init() {
+            var random = Math.floor(Math.random() * 3);
+            var arraycolor = ["red", "green", "blue"];
+            var mydiv = document.getElementById("mydiv");
+            mydiv.style.backgroundColor = arraycolor[random];
+            mydiv.onclick = changeColor;
+        }
+
+        window.onload = init;
+
+        function divcolor() {
+          // var random = Math.floor(Math.random() * 3);
+          // var arraycolor = ["red", "green", "blue"];
+
+            var d = document.getElementById("mydiv");
+           // d.style.backgroundColor == arraycolor[random];
+           if(d.style.backgroundColor == "blue") {
+
+            d.style.backgroundColor = "red";
+
+           } else if(d.style.backgroundColor == "red") {
+            
+            d.style.backgroundColor = "green";
+
+           } else if(d.style.backgroundColor == "green"){
+            d.style.backgroundColor = "blue";
+           }
+        }
+
     </script>
 </head>
 <body>
-<div id="mydiv"></div>
+<div id="mydiv" onclick="divcolor()" ></div>
 </body>
 </html>
